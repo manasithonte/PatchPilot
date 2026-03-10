@@ -8,7 +8,7 @@ from core.repo_analyzer import analyze_repo
 from ai.planner import generate_upgrade_plan
 from core.github_upgrader import apply_upgrades_and_create_pr
 
-app = FastAPI(title="PatchPilot API", description="Automated dependency upgrades using AI")
+app = FastAPI(title="Nexus API", description="Automated dependency upgrades using AI")
 
 app.add_middleware(
     CORSMiddleware,
@@ -20,7 +20,7 @@ app.add_middleware(
 
 @app.get("/")
 def read_root():
-    return {"message": "Welcome to PatchPilot API"}
+    return {"message": "Welcome to Nexus API"}
 
 @app.post("/api/analyze", response_model=AnalyzeResponse)
 def analyze_repository(request: AnalyzeRequest):

@@ -1,6 +1,6 @@
-# PatchPilot - AI Code Upgrade Agent
+# Nexus - Agentic AI Code Upgrade Assistant
 
-An agentic AI developer tool that automatically analyzes software repositories, identifies outdated dependencies, and generates safe upgrade patches.
+An agentic AI developer tool that automatically analyzes software repositories, identifies outdated dependencies, and generates safe upgrade patches and GitHub Pull Requests.
 
 ## Getting Started
 
@@ -14,7 +14,7 @@ cd backend
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-export GEMINI_API_KEY="your-gemini-key"
+cp .env.example .env # Add your GEMINI_API_KEY inside
 uvicorn main:app --reload
 ```
 
